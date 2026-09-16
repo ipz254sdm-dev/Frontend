@@ -1,0 +1,105 @@
+
+ul {
+    list-style-type: none;
+    font-family: Georgia, serif;
+    background-color: #2a75d3;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+ul ul {
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+}
+
+ul > li {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    transition: box-shadow 0.3s ease;
+}
+
+ul > li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+ul > li > ul {
+    margin-top: 15px;
+    border-left: 4px solid #d97725;
+    padding-left: 15px;
+}
+
+ul > li > ul > li {
+    background-color: transparent;
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+    padding: 0;
+    transition: color 0.3s ease;
+}
+
+
+
+
+
+
+
+ul > li > ul > li > ul {
+    margin-top: 10px;
+    border-left: 4px solid #eebb33;
+    padding-left: 15px;
+}
+
+ul > li > ul > li > ul > li {
+    background-color: #f4f5f7;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+ul > li > ul > li > ul > li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+ul > li:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+ul > li > ul > li:hover {
+    color: #d97725;
+}
+
+ul > li > ul > li > ul > li:hover {
+    background-color: #e2e2e2;
+    transform: translateX(10px);
+}
+
+ul > li > ul > li > ul > li:active {
+    background-color: #d1d1d1;
+    transform: translateX(5px);
+}
